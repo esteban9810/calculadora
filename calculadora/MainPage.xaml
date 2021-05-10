@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculadora.MainPage">
+
+    <StackLayout Orientation="Vertical" Padding="10" >
+
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" Padding="20"  >
+            <Label Text="MY CALCULATOR" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+        </StackLayout>
+        
+        <Label Padding="10"/>
+
+        <StackLayout  >
+            <Label Text="First number" FontSize="20" FontAttributes="Bold"  />
+            <Entry x:Name="num1" FontSize="20" Keyboard="Numeric" HorizontalTextAlignment="Center" />
+         </StackLayout>
+
+        <Label Padding="10"/>
+        
+        <StackLayout  >
+            <Label Text="Second number" FontSize="20" FontAttributes="Bold"  />
+            <Entry x:Name="num2" FontSize="20" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+
+        <Label Padding="10"/>
+        
+        <StackLayout  >
+            <Label Text="Selecione la operacion" FontSize="20" FontAttributes="Bold"  />
+            <Picker Title="SELECT OPTION" HorizontalTextAlignment="Center" x:Name="option" SelectedIndexChanged="option_SelectedIndexChanged" />
+
+        </StackLayout>
+
+        <Label Padding="10"/>
+        
+        <StackLayout  >
+            <Button Clicked="Button_Clicked" Text="Get result" BackgroundColor="Red" FontSize="25" FontAttributes="Bold" Padding="15" HorizontalOptions="FillAndExpand" />
+            <Label Text="?" x:Name="ans" FontSize="50" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+
+
+     
+
+
+    </StackLayout>
+    
+
+
+
+</ContentPage>
